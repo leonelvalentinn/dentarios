@@ -1,9 +1,23 @@
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { PrincipalLayout } from './layouts/PrincipalLayout'
+import { Home } from './pages/Home'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <PrincipalLayout />,
+    children: [
+      {
+        index: true,
+        path: '/',
+        element: <Home />
+      }
+    ]
+  }
+])
+
 function App() {
-  return (
-    <>
-      <h1 className='text-6xl text-blue-500'>Vite + React</h1>
-    </>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
