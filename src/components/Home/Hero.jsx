@@ -1,5 +1,5 @@
 import { ContactButton } from '../ContactButton'
-import HeroImage from '../../assets/images/hero-ads.png'
+import HeroImage from '../../assets/images/hero-ads-1.png'
 
 export const Hero = () => {
   return (
@@ -44,7 +44,7 @@ export const Hero = () => {
           height='1200'
           alt='Hero Image'
           loading='eager'
-          className='w-full max-w-[480px]'
+          className='w-full max-w-[480px] rounded-b-full drop-shadow-xl drop-shadow-blue-300'
         />
       </article>
     </section>
