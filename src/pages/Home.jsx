@@ -1,4 +1,5 @@
 import { Hero } from '../components/Home/Hero'
+import { Packages } from '../components/Home/Packages'
 import { Services } from '../components/Home/Services'
 import { SliderClients } from '../components/SliderClients'
 
@@ -8,6 +9,7 @@ export const Home = () => {
       <Hero />
       <SliderClients />
       <Services />
+      <Packages />
     </>
   )
 }
