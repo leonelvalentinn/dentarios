@@ -8,8 +8,8 @@ export const CardPackage = ({ name, price, details }) => {
         <CrownIcon className='w-6 h-6 p-1 rounded-full text-white bg-yellow-500' />
       </h3>
       <ul className='grid md:grid-cols-2'>
-        {details.map((el) => (
-          <li className='flex gap-2'>
+        {details.map((el, i) => (
+          <li className='flex gap-2' key={i}>
             <CheckIcon className='w-4 h-4 p-[2px] bg-blue-500 rounded-full text-white transition group-hover:text-blue-600 group-hover:bg-white' />
             {el}
           </li>

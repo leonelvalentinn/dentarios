@@ -58,8 +58,9 @@ export const Packages = () => {
         Competitive pricing for High-Quality Services
       </h2>
       <div className='w-full grid gap-4 md:grid-cols-2 md:gap-8'>
-        {PLANS.map((plan) => (
+        {PLANS.map((plan, i) => (
           <CardPackage
+            key={i}
             price={plan.price}
             details={plan.details}
             name={plan.name}

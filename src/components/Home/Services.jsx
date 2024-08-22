@@ -9,11 +9,24 @@ const optionsSliderReviews = {
   wheel: true,
   type: 'loop',
   releaseWheel: true,
-  arrows: false,
+  arrows: true,
+  perMove: 1,
   pagination: false,
   height: '500px',
   perPage: 4,
-  heightRatio: 0.5
+  heightRatio: 0.5,
+  classes: {
+    arrows: 'absolute -right-20 flex gap-4 flex-col z-10 -top-2',
+    arrow:
+      'rounded-full bg-white fill-blue-600 border border-blue-600 p-2 transition hover:bg-blue-600 hover:fill-white',
+    prev: '-rotate-90',
+    next: 'rotate-90'
+  },
+  breakpoints: {
+    767: {
+      arrows: false
+    }
+  }
 }
 
 const SERVICES = [
