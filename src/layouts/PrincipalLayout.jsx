@@ -1,13 +1,15 @@
 import { Outlet } from 'react-router-dom'
+import { Header } from '../components/Header/Header'
+import { Footer } from '../components/Footer/Footer'
 
 export const PrincipalLayout = () => {
   return (
     <>
-      <p className='text-center text-3xl'>Header</p>
+      <Header />
       <main className='w-full flex flex-col justify-center items-center px-4'>
         <Outlet />
       </main>
-      <p className='text-center text-3xl'>footer</p>
+      <Footer />
     </>
   )
 }
