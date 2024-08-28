@@ -31,29 +31,31 @@ export const Header = () => {
   return (
     <>
       <nav className='bg-white h-auto relative'>
-        <div className='container-nav flex flex-row justify-between w-11/12 m-auto py-2 items-center md:py-5 '>
+        <div className='container-nav flex flex-row justify-between w-11/12 max-w-7xl m-auto py-2 items-center md:py-5 '>
           <div className='logo-header'>
             <img src={Logo} alt='' className='w-40 md:w-64' />
           </div>
-          <ul
-            className={`${isOpenMenu ? 'left-0' : '-left-full md:left-auto'}  menu absolute  top-0 bg-sky-950 w-full left-0 h-screen flex  
-            items-center flex-col z-40 duration-500 md:relative md:h-auto md:w-auto md:flex-row md:bg-transparent `}
+          <div
+            className={`${isOpenMenu ? 'left-0' : '-left-full'} absolute top-0 bg-sky-950 w-full h-screen z-50 duration-700 md:left-auto md:bg-transparent md:h-auto md:w-auto md:relative  `}
           >
-            <RiCloseLargeLine
-              className='absolute z-40 text-white top-5 right-5 text-xl md:hidden'
-              onClick={() => setIsOpenMenu(!isOpenMenu)}
-            />
+            <ul className='flex justify-center items-center flex-col md:flex-row'>
+              <RiCloseLargeLine
+                className='absolute z-40 text-white top-5 right-5 text-xl md:hidden'
+                onClick={() => setIsOpenMenu(!isOpenMenu)}
+              />
 
-            {MENU.map((data, index) => (
-              <li
-                className='pt-14 text-white text-lg md:text-slate-900 md:pt-2 md:mx-5'
-                key={index}
-              >
-                <a href={data.link}>{data.name}</a>
-              </li>
-            ))}
-            <ContactButton bg='bg-blue-600 mt-14 md:mt-0' />
-          </ul>
+              {MENU.map((data, index) => (
+                <li
+                  className='pt-14 text-white text-lg md:text-slate-900 md:pt-2 md:mx-5'
+                  key={index}
+                >
+                  <a href={data.link}>{data.name}</a>
+                </li>
+              ))}
+              <ContactButton bg='bg-blue-600 mt-14 md:mt-0' />
+            </ul>
+          </div>
+
           <div
             className='bar-menu md:hidden'
             onClick={() => setIsOpenMenu(!isOpenMenu)}
