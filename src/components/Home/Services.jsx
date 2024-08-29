@@ -76,7 +76,7 @@ export const Services = () => {
   }, [])
 
   return (
-    <section className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:my-20'>
+    <section className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:mb-20 md:mt-4'>
       <div className='grid gap-4 md:grid-cols-2 md:gap-10'>
         <h2 className='text-2xl font-semibold leading-9'>
           Customized Solutions to Your Business Goals

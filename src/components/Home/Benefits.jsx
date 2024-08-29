@@ -37,7 +37,7 @@ export const Benefits = () => {
   return (
     <>
       <div className='benefits my-14 w-full max-w-7xl'>
-        <div className='container-benefits w-full p-5  bg-slate-200 flex flex-col gap-8 md:flex-row md:py-28 '>
+        <div className='container-benefits w-full p-5  bg-slate-200 flex flex-col gap-8 md:flex-row md:pt-28  '>
           <div className='item-benefits flex justify-center  flex-col  md:w-5/12 '>
             <h2 className='font-semibold text-3xl md:text-5xl'>
               Generar tráfico dirigido y aumenta tus concersiones

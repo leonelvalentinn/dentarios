@@ -1,3 +1,4 @@
+import { CallToAction } from '../components/CallToAction'
 import { Benefits } from '../components/Home/Benefits'
 import { Hero } from '../components/Home/Hero'
 import { Packages } from '../components/Home/Packages'
@@ -14,6 +15,7 @@ export const Home = () => {
       <Services />
       <Testimonials />
       <Packages />
+      <CallToAction />
     </>
   )
 }
