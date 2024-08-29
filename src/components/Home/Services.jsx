@@ -2,7 +2,7 @@ import { Splide } from '@splidejs/react-splide'
 import HeroImage from '../../assets/images/services-woman.png'
 import { CardService } from './CardService'
 import '@splidejs/react-splide/css/core'
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 const optionsSliderReviews = {
   direction: 'ttb',
