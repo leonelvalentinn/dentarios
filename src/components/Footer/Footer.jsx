@@ -67,8 +67,8 @@ export const Footer = () => {
   ]
   return (
     <>
-      <footer className=' bg-blue-100  max-w-7xl h-auto relative m-auto'>
-        <div className='container-footer  flex flex-col justify-start gap-3 w-11/12  m-auto pt-28 md:grid md:grid-cols-4 md:justify-items-end '>
+      <footer className=' bg-blue-100 w-full  h-auto relative m-auto '>
+        <div className='container-footer max-w-7xl  flex flex-col justify-start gap-3 w-11/12  m-auto pt-40 md:grid md:grid-cols-4 md:justify-items-end md:pb-3 md:pt-60 '>
           <div className='item-footer flex flex-col gap-4 '>
             <img src={Logo} alt='' className='max-w-52' />
             <p className='text-gray-400 text-sm'>
@@ -88,8 +88,10 @@ export const Footer = () => {
             </div>
           </div>
           <div className='item-footer'>
-            <h4 className='font-semibold text-gray-500 text-sm'>Company</h4>
-            <ul className='menu-footer flex justify-start flex-col'>
+            <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
+              Company
+            </h4>
+            <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Company.map((com, index) => (
                 <li className='text-sm text-gray-400 font-light' key={index}>
                   <a href={com.link}>{com.name}</a>
@@ -98,8 +100,10 @@ export const Footer = () => {
             </ul>
           </div>
           <div className='item-footer'>
-            <h4 className='font-semibold text-gray-500 text-sm'>Features</h4>
-            <ul className='menu-footer flex justify-start flex-col'>
+            <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
+              Features
+            </h4>
+            <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Features.map((feature, index) => (
                 <li className='text-sm text-gray-400 font-light' key={index}>
                   <a href={feature.link}>{feature.name}</a>
@@ -108,8 +112,10 @@ export const Footer = () => {
             </ul>
           </div>
           <div className='item-footer'>
-            <h4 className='font-semibold text-gray-500 text-sm'>Help</h4>
-            <ul className='menu-footer flex justify-start flex-col'>
+            <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
+              Help
+            </h4>
+            <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Helps.map((help, index) => (
                 <li className='text-sm text-gray-400 font-light' key={index}>
                   <a href={help.link}>{help.name}</a>
@@ -118,12 +124,15 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className='hr-div bg-neutral-500 '></div>
-        <div className='item md:flex md:flex-row justify-between'>
+        <div className='hr-div bg-neutral-500 max-w-7xl m-auto my-2'></div>
+        <div
+          className='item md:flex md:flex-row justify-between max-w-7xl
+       m-auto p-2 '
+        >
           <p className='text-xs text-gray-400 font-light'>
             @2024 Dentarios. Todos los derechos reservados
           </p>
-          <div className='terminos'>
+          <div className='terminos flex gap-5'>
             <a href='' className='text-xs text-gray-400 font-light'>
               Privacy Policy
             </a>
