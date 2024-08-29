@@ -4,6 +4,7 @@ import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { dataTestimonials } from './Testimonials.data'
 import { GiRoundStar } from 'react-icons/gi'
+import { FaQuoteLeft } from 'react-icons/fa'
 
 import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
 
@@ -28,13 +29,18 @@ export function Slide() {
       className='h-[250px] w-full md:max-w-6xl'
     >
       {dataTestimonials.map(({ id, name, work, testimonial, image }) => (
-        <SwiperSlide key={id} className='my-5 cursor-pointer md:px-10'>
+        <SwiperSlide
+          key={id}
+          className='my-5 cursor-pointer md:px-10 relative bg-slate-50 p-5 rounded-md'
+        >
+          <FaQuoteLeft className='absolute right-7 top-0  text-3xl md:text-4xl text-slate-300 ' />
+
           <div className='calificaciones flex'>
-            <GiRoundStar className='text-yellow-500' />{' '}
-            <GiRoundStar className='text-yellow-500' />{' '}
-            <GiRoundStar className='text-yellow-500' />{' '}
-            <GiRoundStar className='text-yellow-500' />
-            <GiRoundStar className='text-yellow-500' />
+            <GiRoundStar className='text-yellow-500 text-xl' />{' '}
+            <GiRoundStar className='text-yellow-500 text-xl' />{' '}
+            <GiRoundStar className='text-yellow-500 text-xl' />{' '}
+            <GiRoundStar className='text-yellow-500 text-xl' />
+            <GiRoundStar className='text-yellow-500 text-xl' />
           </div>
 
           <div className='my-5 text-sm'>{testimonial}</div>
