@@ -1,13 +1,13 @@
-import Img1 from '/src/assets/images/monica.png'
-import Img2 from '/src/assets/images/baquero.png'
-import Img3 from '/src/assets/images/juarez.png'
-import Img4 from '/src/assets/images/nora.png'
-import Img5 from '/src/assets/images/diego.png'
-import Img6 from '/src/assets/images/marisol.png'
-import Img7 from '/src/assets/images/sara.png'
-import Img8 from '/src/assets/images/ivonne.png'
-import Img9 from '/src/assets/images/profile2.png'
-import Img10 from '/src/assets/images/profile4.png'
+import Img1 from '../../assets/images/monica.webp'
+import Img2 from '../../assets/images/baquero.webp'
+import Img3 from '../../assets/images/juarez.webp'
+import Img4 from '../../assets/images/nora.webp'
+import Img5 from '../../assets/images/diego.webp'
+import Img6 from '../../assets/images/marisol.webp'
+import Img7 from '../../assets/images/sara.webp'
+import Img8 from '../../assets/images/ivonne.webp'
+import Img9 from '../../assets/images/profile2.webp'
+import Img10 from '../../assets/images/profile4.webp'
 
 export const dataTestimonials = [
   {

@@ -1,10 +1,10 @@
-import Doctora from '../../assets/images/pago.png'
+import Doctora from '../../assets/images/pago.webp'
 
 export const Pago = () => {
   return (
     <>
       <div className='pago bg-blue-500 z-10 mb-14 w-full px-5 py-9 mt-14 md:max-w-7xl rounded-md md:pb-24 md:mt-10 md:mb-60 relative'>
-        <div className='container-pago justify-between md:flex md:absolute md:z-10 bg-blue-500 md:left-0 md:-top-0 md:w-full md:h-80  '>
+        <div className='container-pago justify-between md:flex md:absolute md:z-10 rounded-md bg-blue-500 md:left-0 md:-top-0 md:w-full md:h-80  '>
           <div className='item-pago mb-5 relative  md:-mt-20 md:w-3/6 '>
             <img src={Doctora} alt='' className='imgCall' />
           </div>
