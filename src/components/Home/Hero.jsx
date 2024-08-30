@@ -9,11 +9,11 @@ export const Hero = () => {
     >
       <div className='absolute w-full max-w-[500px] h-[300px] rounded-full bg-gradient-to-br opacity-40 from-[#5454D4]/40 to-[#5454D4]/20 blur-3xl top-0 -left-60 rotate-[20deg] -z-[2] md:top-24 md:h-[400px] lg:from-primaryBlue/30 lg:to-[#7835FD]/30 lg:max-w-[1200px] lg:h-[300px]'></div>
       <article className='flex flex-col gap-6'>
-        <h1 className='uppercase text-3xl font-semibold w-full leading-10 lg:text-4xl lg:leading-[3rem]'>
-          Marketing Digital para Odontólogos: Atrae
-          <span className='text-blue-600'>
+        <h1 className='uppercase text-blue-600 text-3xl font-semibold w-full leading-10 lg:text-4xl lg:leading-[3rem]'>
+          Publicidad digital para clínicas dentales
+          <span className='text-black'>
             {' '}
-            Más Pacientes y Haz Crecer Tu Negocio
+            Atrae más pacientes y haz crecer tu negocio
           </span>
         </h1>
         <p className='text-[#13151a]/80'>
