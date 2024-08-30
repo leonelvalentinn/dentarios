@@ -45,6 +45,13 @@ html {
   height: 1px;
   width: 100%;
 }
+#desc-label,
+#price-label {
+  color: white;
+}
+.css-xoxfz9 {
+  margin-bottom: 5px;
+}
 
 @media (min-width: 767px) {
   .imgCall {
@@ -53,5 +60,11 @@ html {
   }
   .container-call-to-action {
     border-radius: 10px;
+  }
+  #zoid-paypal-buttons-uid_69c4129051_mda6mda6ndy {
+    width: 250px !important;
+  }
+  .css-xoxfz9 {
+    margin-bottom: 5px !important;
   }
 }

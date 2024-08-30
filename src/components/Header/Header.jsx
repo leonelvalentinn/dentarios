@@ -24,6 +24,11 @@ export const Header = () => {
     },
     {
       id: 4,
+      name: 'Academy',
+      link: 'https://dentric.com.mx'
+    },
+    {
+      id: 5,
       name: 'Testimonios',
       link: 'https://dentric.com.mx'
     }

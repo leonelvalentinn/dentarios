@@ -22,6 +22,11 @@ export const Footer = () => {
     },
     {
       id: 4,
+      name: 'Academy',
+      link: 'https://dentric.com.mx'
+    },
+    {
+      id: 5,
       name: 'Servicios',
       link: 'https://dentric.com.mx'
     }
@@ -29,22 +34,27 @@ export const Footer = () => {
   const Features = [
     {
       id: 1,
-      name: 'Seo Audits',
+      name: 'Gestión de redes sociales',
       link: 'https://dentric.com.mx'
     },
     {
       id: 2,
-      name: 'Data Tracking',
+      name: 'Posicionamiento ',
       link: 'https://dentric.com.mx'
     },
     {
       id: 3,
-      name: 'Research',
+      name: 'Desarrollo Web',
       link: 'https://dentric.com.mx'
     },
     {
       id: 4,
-      name: 'Optimazion',
+      name: 'Producción de Contenido',
+      link: 'https://dentric.com.mx'
+    },
+    {
+      id: 4,
+      name: 'Publicidad en Google Ads',
       link: 'https://dentric.com.mx'
     }
   ]
@@ -56,12 +66,12 @@ export const Footer = () => {
     },
     {
       id: 2,
-      name: 'Faqs',
+      name: 'Preguntas Frecuentes',
       link: 'https://dentric.com.mx'
     },
     {
       id: 3,
-      name: 'Customer Service',
+      name: 'Paquetes',
       link: 'https://dentric.com.mx'
     }
   ]
@@ -89,7 +99,7 @@ export const Footer = () => {
           </div>
           <div className='item-footer'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
-              Company
+              Menú
             </h4>
             <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Company.map((com, index) => (
@@ -101,7 +111,7 @@ export const Footer = () => {
           </div>
           <div className='item-footer'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
-              Features
+              Servicios
             </h4>
             <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Features.map((feature, index) => (
@@ -113,7 +123,7 @@ export const Footer = () => {
           </div>
           <div className='item-footer'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
-              Help
+              Ayuda
             </h4>
             <ul className='menu-footer flex justify-start flex-col md:gap-3'>
               {Helps.map((help, index) => (
@@ -134,7 +144,7 @@ export const Footer = () => {
           </p>
           <div className='terminos flex gap-5'>
             <a href='' className='text-xs text-gray-400 font-light'>
-              Privacy Policy
+              Política de privacidad
             </a>
             <a href='' className='text-xs text-gray-400 font-light'>
               Terminos y Condiciones
