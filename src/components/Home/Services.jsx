@@ -33,8 +33,7 @@ const SERVICES = [
   {
     id: 0,
     title: 'Diseño de Promocionales',
-    description:
-      'Creamos materiales atractivos que conecten con tus pacientes.'
+    description: 'Creamos materiales atractivos que conecten con tus pacientes.'
   },
   {
     id: 1,
@@ -45,8 +44,7 @@ const SERVICES = [
   {
     id: 2,
     title: 'Edición de Video',
-    description:
-      'Videos impactantes para promocionar tus servicios dentales.'
+    description: 'Videos impactantes para promocionar tus servicios dentales.'
   },
   {
     id: 3,
@@ -88,13 +86,18 @@ export const Services = () => {
   }, [])
 
   return (
-    <section className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:mb-20 md:mt-4'>
+    <section
+      className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:mb-20 md:mt-4'
+      id='servicios'
+    >
       <div className='grid gap-4 md:grid-cols-2 md:gap-10'>
         <h2 className='text-2xl font-semibold leading-9'>
           Soluciones Personalizadas para Impulsar Tu Clínica Dental
         </h2>
         <p className='text-lightBlack/80'>
-          Campañas en Google ADS, publicidad en redes sociales y más, diseñadas para atraer nuevos pacientes y fortalecer tu clínica. ¡Lleva tu práctica al siguiente nivel con nosotros!
+          Campañas en Google ADS, publicidad en redes sociales y más, diseñadas
+          para atraer nuevos pacientes y fortalecer tu clínica. ¡Lleva tu
+          práctica al siguiente nivel con nosotros!
         </p>
       </div>
       <div className='max-w-4xl mt-10 md:grid md:grid-cols-2 '>

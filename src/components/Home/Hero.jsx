@@ -3,12 +3,18 @@ import HeroImage from '../../assets/images/hero.webp'
 
 export const Hero = () => {
   return (
-    <section className='w-full max-w-7xl grid grid-cols-1 place-items-center gap-10 py-8 md:grid-cols-2 lg:gap-12 lg:py-0 lg:pb-10 lg:pt-12'>
+    <section
+      className='w-full max-w-7xl grid grid-cols-1 place-items-center gap-10 py-8 md:grid-cols-2 lg:gap-12 lg:py-0 lg:pb-10 lg:pt-12'
+      id='inicio'
+    >
       <div className='absolute w-full max-w-[500px] h-[300px] rounded-full bg-gradient-to-br opacity-40 from-[#5454D4]/40 to-[#5454D4]/20 blur-3xl top-0 -left-60 rotate-[20deg] -z-[2] md:top-24 md:h-[400px] lg:from-primaryBlue/30 lg:to-[#7835FD]/30 lg:max-w-[1200px] lg:h-[300px]'></div>
       <article className='flex flex-col gap-6'>
         <h1 className='uppercase text-3xl font-semibold w-full leading-10 lg:text-4xl lg:leading-[3rem]'>
-          Marketing Digital para Odontólogos: Atrae 
-          <span className='text-blue-600'> Más Pacientes y Haz Crecer Tu Negocio</span>
+          Marketing Digital para Odontólogos: Atrae
+          <span className='text-blue-600'>
+            {' '}
+            Más Pacientes y Haz Crecer Tu Negocio
+          </span>
         </h1>
         <p className='text-[#13151a]/80'>
           Los pacientes de hoy confían en Google para encontrar sus servicios
@@ -34,7 +40,9 @@ export const Hero = () => {
               Tráfico <br /> Generado
             </p>
           </div>
-          <span className='text-xs absolute -bottom-4 left-0 text-[#13151a]/80'>*Datos obtenidos en base al mes de Julio</span>
+          <span className='text-xs absolute -bottom-4 left-0 text-[#13151a]/80'>
+            *Datos obtenidos en base al mes de Julio
+          </span>
         </div>
       </article>
       <article className='w-full grid place-content-end md:place-content-start lg:place-content-end'>

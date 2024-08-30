@@ -9,7 +9,6 @@ import Img8 from '/src/assets/images/ivonne.png'
 import Img9 from '/src/assets/images/profile2.png'
 import Img10 from '/src/assets/images/profile4.png'
 
-
 export const dataTestimonials = [
   {
     id: 1,
@@ -37,7 +36,7 @@ export const dataTestimonials = [
   },
   {
     id: 4,
-    name: 'Dra Nora Castillo',
+    name: 'Dra. Nora Castillo',
     work: 'Biodontiq',
     testimonial:
       'Solo tengo palabras de agradecimiento para Dentarios, por traer nuevos pacientes para mi consultorio dental y por quitarme el miedo a las nuevas redes sociales que son potenciales en este tiempo, tenemos que aprovecharlas. Muchas Gracias Dentarios.',
