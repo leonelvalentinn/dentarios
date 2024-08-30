@@ -14,35 +14,38 @@ const PLANS = [
     price: '125'
   },
   {
-    name: 'Facebook',
+    name: 'Paquete Premium Redes Sociales',
     details: [
+      'Una Red Social: Facebook, Instagram o TikTok',
       'Configuración y optimización de Hasta 3 Campañas',
-      'Diseño de Promocionales',
-      'Edición de Video',
-      'Posteos en Página de Facebook',
-      'Segmentación a Clientes Potenciales',
+      'Diseño de Promocionales y Edición de Video',
+      'Contenido Orgánico',
+      'Campañas de Inbox, WhatsApp y Tráfico a la Web',
       'Medición, Análisis, y Entrega de Métricas Mensuales'
     ],
     price: '250'
   },
   {
-    name: 'Paquete Plus',
+    name: 'Paquete Platino Redes Sociales',
     details: [
-      'Publicidad en Facebook',
-      'Campañas de Posicionamiento en Google',
-      'Todo lo incluido en el paquete Facebook',
-      'Todo lo incluido en el paquete Google'
+      'Dos Redes Sociales: Facebook, Instagram o Google',
+      'Configuración y optimización de Hasta 3 Campañas',
+      'Diseño de Promocionales y Edición de Video',
+      'Contenido Orgánico',
+      'Campañas de Inbox, WhatsApp y Tráfico a la Web',
+      'Medición, Análisis, y Entrega de Métricas Mensuales'
     ],
     price: '300'
   },
   {
-    name: 'Paquete Premium',
+    name: 'Paquete Diamante Redes Sociales',
     details: [
-      'Publicidad en Facebook',
-      'Publicidad en Instagram',
-      'Campañas de Posicionamiento en Google',
-      'Todo lo incluido en el paquete Facebook',
-      'Todo lo incluido en el paquete Instagram'
+      'Tres Redes Sociales: Facebook, Instagram, Google o TikTok',
+      'Configuración y optimización de Hasta 3 Campañas',
+      'Diseño de Promocionales y Edición de Video',
+      'Contenido Orgánico',
+      'Campañas de Inbox, WhatsApp y Tráfico a la Web',
+      'Medición, Análisis, y Entrega de Métricas Mensuales'
     ],
     price: '450'
   }
