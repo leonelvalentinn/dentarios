@@ -54,7 +54,7 @@ const PLANS = [
 export const Packages = () => {
   return (
     <section
-      className='w-full flex flex-col items-center gap-4 max-w-5xl'
+      className='w-full flex flex-col items-center gap-4 max-w-6xl'
       id='paquetes'
     >
       <h2 className='text-2xl font-semibold leading-9'>

@@ -9,7 +9,7 @@ export const CardPackage = ({ name, details }) => {
         {name}
         <CrownIcon className='w-6 h-6 p-1 rounded-full text-white bg-yellow-500' />
       </h3>
-      <ul className='grid md:grid-cols-2'>
+      <ul className='grid gap-2 md:grid-cols-2'>
         {details.map((el, i) => (
           <li className='flex gap-2 w-full' key={i}>
             <CheckIcon className='w-4 h-4 p-[2px] mt-1 bg-blue-500 rounded-full text-white transition group-hover:text-blue-600 group-hover:bg-white' />
