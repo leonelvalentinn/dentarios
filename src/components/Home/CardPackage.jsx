@@ -19,12 +19,12 @@ export const CardPackage = ({ name, details }) => {
       </ul>
       <div className='w-full flex justify-between items-center'>
         <a
-          href=''
+          href='https://api.whatsapp.com/send?phone=525575791467'
           className='px-5 py-1 border rounded-full border-blue-500 bg-white text-lightBlack transition hover:scale-105'
           target='_blank'
           rel='noopener noreferrer'
         >
-          Get started
+          Contáctanos
         </a>
       </div>
     </article>
