@@ -41,13 +41,14 @@ export const Benefits = () => {
       <div className='benefits my-14 w-full max-w-7xl' id='beneficios'>
         <div className='container-benefits w-full p-5  bg-slate-200 flex flex-col gap-8 md:flex-row md:pt-24 md:pb-24 md:px-10  '>
           <div className='item-benefits flex justify-center  flex-col  md:w-5/12 '>
-            <h2 className='font-semibold text-3xl md:text-5xl'>
-              Genera tráfico y aumenta tus conversiones
+            <h2 className='font-semibold text-2xl md:text-3xl'>
+              Creamos estrategias digitales de alto impacto, aumentando tus
+              pacientes
             </h2>
             <p className='text-sm md:text-base mb-2'>
-              Establezca su clínica o consultorio dental y genere confianza con
-              nuestras soluciones comprobadas que aumentan la reputación en
-              línea y lo posicionan como líder de la industria.
+              Soluciones digitales comprobadas que aumentan la reputación en
+              línea de tu clínica dental posicionándote como líder en la
+              industria
             </p>
             <ContactButton bg='bg-blue-600' />
           </div>
