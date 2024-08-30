@@ -8,82 +8,77 @@ export const Footer = () => {
     {
       id: 1,
       name: 'Inicio',
-      link: 'https://dentric.com.mx'
+      link: '#inicio'
     },
     {
       id: 2,
-      name: 'Nosotros',
-      link: 'https://dentric.com.mx'
+      name: 'Beneficios',
+      link: '#beneficios'
     },
     {
       id: 3,
-      name: 'Beneficios',
-      link: 'https://dentric.com.mx'
+      name: 'Servicios',
+      link: '#servicios'
     },
     {
       id: 4,
       name: 'Academy',
-      link: 'https://dentric.com.mx'
+      link: 'https://academy.dentarios.com.mx/'
     },
     {
       id: 5,
-      name: 'Servicios',
-      link: 'https://dentric.com.mx'
+      name: 'Testimonios',
+      link: '#testimonios'
     }
   ]
   const Features = [
     {
       id: 1,
       name: 'Gestión de redes sociales',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     },
     {
       id: 2,
       name: 'Posicionamiento ',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     },
     {
       id: 3,
       name: 'Desarrollo Web',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     },
     {
       id: 4,
       name: 'Producción de Contenido',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     },
     {
       id: 4,
       name: 'Publicidad en Google Ads',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     }
   ]
   const Helps = [
     {
       id: 1,
       name: 'Contacto',
-      link: 'https://dentric.com.mx'
+      link: 'https://api.whatsapp.com/send?phone=525575791467'
     },
     {
       id: 2,
-      name: 'Preguntas Frecuentes',
-      link: 'https://dentric.com.mx'
-    },
-    {
-      id: 3,
       name: 'Paquetes',
-      link: 'https://dentric.com.mx'
+      link: '#paquetes'
     }
   ]
   return (
     <>
       <footer className=' bg-blue-100 w-full  h-auto relative m-auto '>
-        <div className='container-footer max-w-7xl  flex flex-col justify-start gap-3 w-11/12  m-auto pt-40 md:grid md:grid-cols-4 md:justify-items-end md:pb-3 md:pt-60 '>
+        <div className='container-footer max-w-7xl  flex flex-col justify-start gap-3 w-11/12  m-auto pt-40 md:grid md:grid-cols-4  md:pb-3 md:pt-60 '>
           <div className='item-footer flex flex-col gap-4 '>
             <img src={Logo} alt='' className='max-w-52' />
             <p className='text-gray-400 text-sm'>
-              We provide customized SEO solutions tailored to the unique needs
-              ands goals our clients
+              Brindamos soluciones personalizadas adaptadas a las necesidades y
+              objetivos únicos de nuestros clientes.
             </p>
             <div className='link-redes-foote flex gap-3'>
               <a href=''>
@@ -97,7 +92,7 @@ export const Footer = () => {
               </a>
             </div>
           </div>
-          <div className='item-footer'>
+          <div className='item-footer md:flex md:flex-col md:items-center'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
               Menú
             </h4>
@@ -109,7 +104,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className='item-footer'>
+          <div className='item-footer md:flex md:flex-col md:items-center'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
               Servicios
             </h4>
@@ -121,7 +116,7 @@ export const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className='item-footer'>
+          <div className='item-footer ml-0 md:flex md:flex-col md:items-center'>
             <h4 className='font-semibold text-gray-500 text-sm md:text-base'>
               Ayuda
             </h4>

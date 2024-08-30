@@ -40,6 +40,7 @@
 html {
   font-family: 'Poppins', system-ui, sans-serif;
   color: #13151a;
+  scroll-behavior: smooth;
 }
 .hr-div {
   height: 1px;

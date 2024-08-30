@@ -2,57 +2,54 @@ import { BsGraphUpArrow } from 'react-icons/bs'
 import { BsBarChartFill } from 'react-icons/bs'
 import { IoInfiniteSharp } from 'react-icons/io5'
 import { TbTargetArrow } from 'react-icons/tb'
+import { ContactButton } from '../ContactButton'
 
 export const Benefits = () => {
   const BENEFICIOS = [
     {
       id: 1,
       Icon: <BsGraphUpArrow />,
-      title: 'Aumentar el trafico',
+      title: 'Impulsa tu clínica dental con más clientes potenciales',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facilis neque ex similique quaerat iure, tempore consequuntur vitae itaque veniam!'
+        'En Dentarios, conectamos tu clínica dental con pacientes que buscan activamente tus servicios. Con estrategias de marketing exclusivas para el sector odontológico, aumentamos tu visibilidad y te ayudamos a convertir más clientes potenciales en pacientes reales.'
     },
     {
       id: 2,
       Icon: <BsBarChartFill />,
-      title: 'Mejora tu clasificación',
+      title: 'Mayor posicionamiento y presencia de tu clínica',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facilis neque ex similique quaerat iure, tempore consequuntur vitae itaque veniam!'
+        'En Dentarios, potenciamos la visibilidad de tu clínica dental, asegurando que sobresalgas y te posiciones como líder. Con estrategias de marketing digital adaptadas específicamente para el sector odontológico, te ayudamos a dominar las búsquedas en línea y a fortalecer tu imagen. Atrae más pacientes y establece tu clínica como la referencia de confianza en el ámbito dental.'
     },
     {
       id: 3,
       Icon: <IoInfiniteSharp />,
-      title: 'Crecimiento sostenible',
+      title: 'Contenido atractivo, profesional y estratégico',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facilis neque ex similique quaerat iure, tempore consequuntur vitae itaque veniam!'
+        ' Nuestro equipo de expertos desarrolla estrategias de contenido que no solo son visualmente impactantes, sino también diseñadas para atraer y convertir pacientes.  Cada diseño y contenido multimedia es cuidadosamente elaborado para reforzar la imagen profesional de tu clínica y maximizar tu presencia en el mercado odontológico.'
     },
     {
       id: 4,
       Icon: <TbTargetArrow />,
-      title: 'Objetivo de audiencia',
+      title:
+        'Apoyo y soporte de profesionales especializados en el sector dental',
       description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui facilis neque ex similique quaerat iure, tempore consequuntur vitae itaque veniam!'
+        'Contamos con un equipo de expertos que entienden a fondo las necesidades y desafíos del sector odontológico. Ofrecemos un apoyo continuo y personalizado para que tu clínica aproveche al máximo nuestras estrategias de marketing digital. Desde la planificación hasta la ejecución, nuestros profesionales especializados están a tu lado.'
     }
   ]
   return (
     <>
-      <div className='benefits my-14 w-full max-w-7xl'>
+      <div className='benefits my-14 w-full max-w-7xl' id='beneficios'>
         <div className='container-benefits w-full p-5  bg-slate-200 flex flex-col gap-8 md:flex-row md:pt-24 md:pb-24 md:px-10  '>
           <div className='item-benefits flex justify-center  flex-col  md:w-5/12 '>
             <h2 className='font-semibold text-3xl md:text-5xl'>
-              Generar tráfico dirigido y aumenta tus concersiones
+              Generar tráfico dirigido y aumenta tus conversiones
             </h2>
-            <p className='text-sm md:text-base'>
-              Establezca su marca como autoridad y genere confianza con nuestras
-              soluciones de SEO comprobadas que aumentan la reputación en línea
-              y lo posicionan como líder de la industria.
+            <p className='text-sm md:text-base mb-2'>
+              Establezca su clínica o consultorio dental y genere confianza con
+              nuestras soluciones comprobadas que aumentan la reputación en
+              línea y lo posicionan como líder de la industria.
             </p>
-            <a
-              href=''
-              className='bg-blue-600 block w-max h-max px-5 py-2 rounded-full font-light transition hover:scale-105 text-white mt-2 '
-            >
-              Leer más
-            </a>
+            <ContactButton bg='bg-blue-600' />
           </div>
           <div className='item-benefits grid gap-2 md:w-7/12 md:grid-cols-2  '>
             {BENEFICIOS.map((beneficio, index) => (
@@ -61,9 +58,7 @@ export const Benefits = () => {
                 key={index}
               >
                 <div className='text-2xl md:text-3xl'>{beneficio.Icon}</div>
-                <h3 className='font-semibold text-xl md:text-2xl '>
-                  {beneficio.title}
-                </h3>
+                <h3 className='font-semibold text-xl  '>{beneficio.title}</h3>
                 <p className='text-sm text-justify  '>
                   {beneficio.description}
                 </p>

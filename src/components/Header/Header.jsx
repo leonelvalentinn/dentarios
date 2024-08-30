@@ -10,27 +10,27 @@ export const Header = () => {
     {
       id: 1,
       name: 'Inicio',
-      link: 'https://dentric.com.mx'
+      link: '#inicio'
     },
     {
       id: 2,
-      name: 'Nosotros',
-      link: 'https://dentric.com.mx'
+      name: 'Beneficios',
+      link: '#beneficios'
     },
     {
       id: 3,
       name: 'Servicios',
-      link: 'https://dentric.com.mx'
+      link: '#servicios'
     },
     {
       id: 4,
       name: 'Academy',
-      link: 'https://dentric.com.mx'
+      link: 'https://academy.dentarios.com.mx/'
     },
     {
       id: 5,
       name: 'Testimonios',
-      link: 'https://dentric.com.mx'
+      link: '#testimonios'
     }
   ]
   return (
