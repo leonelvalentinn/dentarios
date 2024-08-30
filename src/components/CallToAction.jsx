@@ -1,4 +1,4 @@
-import ImgCall from '../assets/images/img-call.png'
+import ImgCall from '../assets/images/img-call.webp'
 import { ContactButton } from './ContactButton'
 import { MdOutlineAutoAwesome } from 'react-icons/md'
 

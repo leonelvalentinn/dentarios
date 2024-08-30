@@ -26,12 +26,12 @@ export function Slide() {
         clickable: true
       }}
       modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-      className='h-[250px] w-full md:max-w-6xl'
+      className='h-[330px] w-full md:max-w-6xl'
     >
       {dataTestimonials.map(({ id, name, work, testimonial, image }) => (
         <SwiperSlide
           key={id}
-          className='my-5 cursor-pointer md:px-10 relative bg-slate-50 p-5 rounded-md'
+          className='my-5 cursor-pointer md:px-10 relative bg-slate-50 p-3 rounded-md'
         >
           <FaQuoteLeft className='absolute right-7 top-0  text-3xl md:text-4xl text-slate-300 ' />
 
@@ -43,12 +43,12 @@ export function Slide() {
             <GiRoundStar className='text-yellow-500 text-xl' />
           </div>
 
-          <div className='my-5 text-sm'>{testimonial}</div>
+          <div className='my-5 text-sm text-justify'>{testimonial}</div>
           <div className='flex'>
             <div className='flex items-center gap-4'>
               <img src={image} alt='' className='w-12 h-12' />
               <div>
-                <h4 className='text-center text-sm'>{name}</h4>
+                <h4 className='text-center text-sm font-semibold'>{name}</h4>
                 <p className='text-primaryDark text-xs'>{work}</p>
               </div>
             </div>
