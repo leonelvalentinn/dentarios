@@ -42,7 +42,7 @@ export const Benefits = () => {
         <div className='container-benefits w-full p-5  bg-slate-200 flex flex-col gap-8 md:flex-row md:pt-24 md:pb-24 md:px-10  '>
           <div className='item-benefits flex justify-center  flex-col  md:w-5/12 '>
             <h2 className='font-semibold text-3xl md:text-5xl'>
-              Generar tráfico dirigido y aumenta tus conversiones
+              Genera tráfico y aumenta tus conversiones
             </h2>
             <p className='text-sm md:text-base mb-2'>
               Establezca su clínica o consultorio dental y genere confianza con

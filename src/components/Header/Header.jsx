@@ -54,7 +54,12 @@ export const Header = () => {
                   className='pt-14 text-white text-lg md:text-slate-900 md:pt-2 md:mx-5'
                   key={index}
                 >
-                  <a href={data.link}>{data.name}</a>
+                  <a
+                    href={data.link}
+                    onClick={() => setIsOpenMenu(!isOpenMenu)}
+                  >
+                    {data.name}
+                  </a>
                 </li>
               ))}
               <ContactButton bg='bg-blue-600 mt-14 md:mt-0' />
