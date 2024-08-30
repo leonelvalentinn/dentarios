@@ -32,27 +32,39 @@ const optionsSliderReviews = {
 const SERVICES = [
   {
     id: 0,
-    title: 'Off-Page',
+    title: 'Diseño de Promocionales',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, repellendus!'
+      'Creamos materiales atractivos que conecten con tus pacientes.'
   },
   {
     id: 1,
-    title: 'Off-Page',
+    title: 'Contenido en tus Páginas',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, repellendus!'
+      'Optimizamos tu contenido para atraer y retener a tus visitantes.'
   },
   {
     id: 2,
-    title: 'Off-Page',
+    title: 'Edición de Video',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, repellendus!'
+      'Videos impactantes para promocionar tus servicios dentales.'
   },
   {
     id: 3,
-    title: 'Off-Page',
+    title: 'Configuración y Optimización de Campañas',
     description:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, repellendus!'
+      'Maximizamos el alcance y la efectividad de tus campañas publicitarias.'
+  },
+  {
+    id: 4,
+    title: 'Sitio Web',
+    description:
+      'Diseñamos sitios web profesionales y fáciles de usar para tu clínica.'
+  },
+  {
+    id: 5,
+    title: 'Google My Business',
+    description:
+      'Mejora tu visibilidad online y atrae más pacientes con un perfil optimizado.'
   }
 ]
 
@@ -79,15 +91,13 @@ export const Services = () => {
     <section className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:mb-20 md:mt-4'>
       <div className='grid gap-4 md:grid-cols-2 md:gap-10'>
         <h2 className='text-2xl font-semibold leading-9'>
-          Customized Solutions to Your Business Goals
+          Soluciones Personalizadas para Impulsar Tu Clínica Dental
         </h2>
         <p className='text-lightBlack/80'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus id
-          soluta amet modi nostrum libero laudantium eius laborum incidunt
-          aliquid!
+          Campañas en Google ADS, publicidad en redes sociales y más, diseñadas para atraer nuevos pacientes y fortalecer tu clínica. ¡Lleva tu práctica al siguiente nivel con nosotros!
         </p>
       </div>
-      <div className='mt-10 md:grid md:grid-cols-2 '>
+      <div className='max-w-4xl mt-10 md:grid md:grid-cols-2 '>
         <article className=''>
           <Splide
             ref={splideRef}
