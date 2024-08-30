@@ -2,50 +2,47 @@ import { CardPackage } from './CardPackage'
 
 const PLANS = [
   {
-    name: 'Bronze Plan',
+    name: 'Google Ads',
     details: [
-      'Custom dashboard',
-      'Up to 10 assets',
-      'Usability check',
-      '8 hours of consulting',
-      'In-depth site analysis',
-      'Up to 75 keywords'
+      'Configuración y Optimización de Campaña',
+      'Diseño de Promocionales',
+      'Google Mi Negocio',
+      'Tu Clínica en Primeros Lugares',
+      'Tráfico Calificado a tu Sitio Web',
+      'Presencia Ante Personas'
     ],
     price: '125'
   },
   {
-    name: 'Silver Plan',
+    name: 'Facebook',
     details: [
-      'Custom dashboard',
-      'Up to 10 assets',
-      'Usability check',
-      '8 hours of consulting',
-      'In-depth site analysis',
-      'Up to 75 keywords'
+      'Configuración y optimización de Hasta 3 Campañas',
+      'Diseño de Promocionales',
+      'Edición de Video',
+      'Posteos en Página de Facebook',
+      'Segmentación a Clientes Potenciales',
+      'Medición, Análisis, y Entrega de Métricas Mensuales'
     ],
     price: '250'
   },
   {
-    name: 'Gold Plan',
+    name: 'Paquete Plus',
     details: [
-      'Custom dashboard',
-      'Up to 10 assets',
-      'Usability check',
-      '8 hours of consulting',
-      'In-depth site analysis',
-      'Up to 75 keywords'
+      'Publicidad en Facebook',
+      'Campañas de Posicionamiento en Google',
+      'Todo lo incluido en el paquete Facebook',
+      'Todo lo incluido en el paquete Google'
     ],
     price: '300'
   },
   {
-    name: 'Diamond Plan',
+    name: 'Paquete Premium',
     details: [
-      'Custom dashboard',
-      'Up to 10 assets',
-      'Usability check',
-      '8 hours of consulting',
-      'In-depth site analysis',
-      'Up to 75 keywords'
+      'Publicidad en Facebook',
+      'Publicidad en Instagram',
+      'Campañas de Posicionamiento en Google',
+      'Todo lo incluido en el paquete Facebook',
+      'Todo lo incluido en el paquete Instagram'
     ],
     price: '450'
   }
@@ -61,7 +58,6 @@ export const Packages = () => {
         {PLANS.map((plan, i) => (
           <CardPackage
             key={i}
-            price={plan.price}
             details={plan.details}
             name={plan.name}
           />

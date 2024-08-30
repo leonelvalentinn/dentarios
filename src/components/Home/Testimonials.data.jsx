@@ -1,7 +1,7 @@
-import Img1 from '/src/assets/images/profile1.png'
-import Img2 from '/src/assets/images/profile2.png'
-import Img3 from '/src/assets/images/profile3.png'
-import Img4 from '/src/assets/images/profile4.png'
+import Img1 from '../../assets/images/profile1.png'
+import Img2 from '../../assets/images/profile2.png'
+import Img3 from '../../assets/images/profile3.png'
+import Img4 from '../../assets/images/profile4.png'
 
 export const dataTestimonials = [
   {
