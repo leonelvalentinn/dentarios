@@ -37,9 +37,9 @@ export const Header = () => {
     <>
       <nav className='bg-white h-auto relative'>
         <div className='container-nav flex flex-row justify-between w-11/12 max-w-7xl m-auto py-2 items-center md:py-5 '>
-          <div className='logo-header'>
+          <a className='logo-header' href='/'>
             <img src={Logo} alt='' className='w-40 md:w-64' />
-          </div>
+          </a>
           <div
             className={`${isOpenMenu ? 'left-0' : '-left-full'} absolute top-0 bg-sky-950 w-full h-screen z-50 duration-700 md:left-auto md:bg-transparent md:h-auto md:w-auto md:relative  `}
           >
@@ -56,7 +56,9 @@ export const Header = () => {
                 >
                   <a
                     href={data.link}
+                    target={data.name === 'Academy' ? '_blank' : '_parent'}
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
+                    rel='noreferrer noopener'
                   >
                     {data.name}
                   </a>
