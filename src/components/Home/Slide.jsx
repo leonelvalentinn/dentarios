@@ -8,7 +8,7 @@ import { FaQuoteLeft } from 'react-icons/fa'
 
 import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules'
 
-export function Slide() {
+export function Slide () {
   return (
     <Swiper
       breakpoints={{

@@ -1,5 +1,6 @@
 import { ContactButton } from '../ContactButton'
 import HeroImage from '../../assets/images/hero.webp'
+import { LiteYoutube } from './LiteYoutube'
 
 export const Hero = () => {
   return (
@@ -10,12 +11,13 @@ export const Hero = () => {
       <div className='absolute w-full max-w-[500px] h-[300px] rounded-full bg-gradient-to-br opacity-40 from-[#5454D4]/40 to-[#5454D4]/20 blur-3xl top-0 -left-60 rotate-[20deg] -z-[2] md:top-24 md:h-[400px] lg:from-primaryBlue/30 lg:to-[#7835FD]/30 lg:max-w-[1200px] lg:h-[300px]'></div>
       <article className='flex flex-col gap-6'>
         <h1 className='uppercase text-blue-600 text-3xl font-semibold w-full leading-10 lg:text-4xl lg:leading-[3rem]'>
-          Publicidad digital para clínicas dentales
+          Agencia de publicidad especializada en clínicas dentales <br />
           <span className='text-black'>
             {' '}
             Atrae más pacientes y haz crecer tu negocio
           </span>
         </h1>
+        <LiteYoutube className='md:hidden' />
         <p className='text-[#13151a]/80'>
           Los pacientes de hoy confían en Google para encontrar sus servicios
           dentales. ¿Tu clínica aparece en la cima? Google Ads asegura que estés
@@ -23,8 +25,8 @@ export const Hero = () => {
           búsquedas en citas y clics en confianza.
         </p>
         <ContactButton bg='bg-blue-600' />
-        <div className='flex flex-col gap-6 relative md:flex-row'>
-          <div className='flex gap-4'>
+        <div className='flex gap-6 justify-center relative md:flex-row md:justify-start'>
+          <div className='flex flex-col gap-1'>
             <h2 className='text-blue-600 text-4xl font-semibold md:text-3xl lg:text-4xl'>
               25K+
             </h2>
@@ -32,7 +34,7 @@ export const Hero = () => {
               Clics <br /> Recibidos
             </p>
           </div>
-          <div className='flex gap-4'>
+          <div className='flex flex-col gap-1'>
             <h2 className='text-blue-600 text-4xl font-semibold md:text-3xl lg:text-4xl'>
               1.09M+
             </h2>
@@ -40,11 +42,14 @@ export const Hero = () => {
               Tráfico <br /> Generado
             </p>
           </div>
-          <span className='text-xs absolute -bottom-4 left-0 text-[#13151a]/80'>
+          <span className='text-xs absolute -bottom-4 left-4 text-[#13151a]/80 md:left-0'>
             *Datos obtenidos en base al mes de Julio
           </span>
         </div>
       </article>
+      <div className='w-full'>
+        <LiteYoutube className='hidden md:flex' />
+      </div>
       <article className='w-full grid place-content-end md:place-content-start lg:place-content-end'>
         <img
           src={HeroImage}
@@ -52,7 +57,7 @@ export const Hero = () => {
           height='1352'
           alt='Hero Image'
           loading='eager'
-          className='w-full max-w-[480px] rounded-b-full rounded-ss-[80rem] rounded-se-[80rem] shadow-xl'
+          className='w-full max-w-[480px] rounded-b-full rounded-ss-[80rem] rounded-se-[80rem] shadow-xl md:hidden'
         />
       </article>
     </section>

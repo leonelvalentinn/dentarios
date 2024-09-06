@@ -16,15 +16,14 @@ const optionsSliderReviews = {
   perPage: 4,
   heightRatio: 0.5,
   classes: {
-    arrows: 'absolute -right-20 flex gap-4 flex-col z-10 -top-2',
+    arrows: 'absolute top-52 right-1/2 translate-x-1/2 md:translate-x-0 md:-right-20 flex gap-4 md:flex-col z-10 md:-top-2',
     arrow:
       'rounded-full bg-white fill-blue-600 border border-blue-600 p-2 transition hover:bg-blue-600 hover:fill-white',
-    prev: '-rotate-90',
-    next: 'rotate-90'
+    prev: 'rotate-180 md:-rotate-90',
+    next: 'md:rotate-90'
   },
   breakpoints: {
     767: {
-      arrows: false,
       direction: 'ltr',
       height: '200px',
       width: '400px',
@@ -97,7 +96,7 @@ export const Services = () => {
 
   return (
     <section
-      className='w-full max-w-5xl flex flex-col justify-center items-center my-10 gap-4 md:mb-20 md:mt-4'
+      className='w-full max-w-5xl flex flex-col justify-center items-center mt-5 mb-10 gap-4 md:mb-20 md:mt-4'
       id='servicios'
     >
       <div className='grid gap-4 md:grid-cols-2 md:gap-10'>
@@ -127,7 +126,7 @@ export const Services = () => {
             ))}
           </Splide>
         </article>
-        <article className='w-full grid place-content-center mt-10 md:mt-0 md:place-content-start lg:place-content-end'>
+        <article className='w-full grid place-content-center mt-20 md:mt-0 md:place-content-start lg:place-content-end'>
           <img
             src={HeroImage}
             width='1200'

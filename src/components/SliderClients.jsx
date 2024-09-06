@@ -43,18 +43,19 @@ const optionsSliderReviews = {
       focus: 'center',
       padding: '1rem',
       autoWidth: true,
+      gap: '20px'
     },
     1023: {
       perPage: 4,
       autoWidth: true,
       padding: '1rem',
       focus: 'center',
-      gap: 0,
+      gap: '20px'
     },
     767: {
       perPage: 1,
-      padding: '1rem',
-      gap: 0,
+      padding: '2rem',
+      gap: '20px',
       focus: 'center',
       autoWidth: true
     }
@@ -191,7 +192,7 @@ const CLIENTS = [
 
 export const SliderClients = () => {
   return (
-    <section className='max-w-6xl mt-8'>
+    <section className='w-full max-w-6xl mt-8'>
       <h3 className='text-center font-medium text-xl text-lightBlack/80 mb-6 md:text-2xl'>
         Con la confianza de más de 120 clínicas en México y Colombia
       </h3>
@@ -199,7 +200,7 @@ export const SliderClients = () => {
         {CLIENTS.map((el, i) => (
           <SplideSlide key={i} className='h-20'>
             <a
-              className='grayscale h-full transition hover:grayscale-0'
+              className='h-full transition hover:scale-105'
               href={el.link}
               target='_blank'
               rel='noopener noreferrer'

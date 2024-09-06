@@ -37,7 +37,7 @@ export const Benefits = () => {
   ]
   return (
     <>
-      <div className='benefits my-14 w-full max-w-7xl' id='beneficios'>
+      <div className='benefits mt-14 mb-5 w-full max-w-7xl' id='beneficios'>
         <div className='container-benefits w-full p-5 bg-slate-200 text-lightBlack rounded-lg flex flex-col gap-8 md:flex-row md:pt-24 md:pb-24 md:px-10'>
           <div className='item-benefits flex justify-center gap-4 flex-col md:w-5/12'>
             <h2 className='font-semibold text-2xl md:text-3xl'>
