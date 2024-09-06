@@ -1,5 +1,5 @@
 import { Splide } from '@splidejs/react-splide'
-import HeroImage from '../../assets/images/services-woman.webp'
+import HeroImage from '../../assets/images/woman-dentist.webp'
 import { CardService } from './CardService'
 import '@splidejs/react-splide/css/core'
 import { useEffect, useRef } from 'react'
@@ -24,7 +24,17 @@ const optionsSliderReviews = {
   },
   breakpoints: {
     767: {
-      arrows: false
+      arrows: false,
+      direction: 'ltr',
+      height: '200px',
+      width: '400px',
+      perPage: 1
+    },
+    428: {
+      width: '350px'
+    },
+    320: {
+      width: '300px'
     }
   }
 }
@@ -117,14 +127,14 @@ export const Services = () => {
             ))}
           </Splide>
         </article>
-        <article className='w-full grid place-content-end md:place-content-start lg:place-content-end'>
+        <article className='w-full grid place-content-center mt-10 md:mt-0 md:place-content-start lg:place-content-end'>
           <img
             src={HeroImage}
             width='1200'
             height='1200'
             alt='Hero Image'
             loading='eager'
-            className='w-full max-w-[300px] rounded-full bg-blue-300'
+            className='w-full max-w-[300px] rounded-full drop-shadow-xl'
           />
         </article>
       </div>

@@ -1,4 +1,8 @@
 import { CardPackage } from './CardPackage'
+import Paquete1 from '../../assets/images/promos/paquete-google.webp'
+import Paquete2 from '../../assets/images/promos/paquete-premium.webp'
+import Paquete3 from '../../assets/images/promos/paquete-platino.webp'
+import Paquete4 from '../../assets/images/promos/paquete-diamante.webp'
 
 const PLANS = [
   {
@@ -60,10 +64,19 @@ export const Packages = () => {
       <h2 className='text-2xl font-semibold leading-9'>
         Precios competitivos para servicios de alta calidad
       </h2>
-      <div className='w-full grid gap-4 md:grid-cols-2 md:gap-8'>
-        {PLANS.map((plan, i) => (
-          <CardPackage key={i} details={plan.details} name={plan.name} />
-        ))}
+      <div className='w-full grid gap-4 md:grid-cols-2'>
+        <a title='Solicitar más información' href='https://api.whatsapp.com/send?phone=525575791467' target='_blank' rel='noopener noreferrer'>
+          <img src={Paquete1} alt='Banner del paquete de Google' className='w-full transition hover:scale-105' />
+        </a>
+        <a title='Solicitar más información' href='https://api.whatsapp.com/send?phone=525575791467' target='_blank' rel='noopener noreferrer'>
+          <img src={Paquete2} alt='Banner del paquete Premium' className='w-full transition hover:scale-105' />
+        </a>
+        <a title='Solicitar más información' href='https://api.whatsapp.com/send?phone=525575791467' target='_blank' rel='noopener noreferrer'>
+          <img src={Paquete3} alt='Banner del paquete Platino' className='w-full transition hover:scale-105' />
+        </a>
+        <a title='Solicitar más información' href='https://api.whatsapp.com/send?phone=525575791467' target='_blank' rel='noopener noreferrer'>
+          <img src={Paquete4} alt='Banner del paquete Diamante' className='w-full transition hover:scale-105' />
+        </a>
       </div>
     </section>
   )

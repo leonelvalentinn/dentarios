@@ -54,12 +54,12 @@ export const Benefits = () => {
           <div className='item-benefits grid gap-2 md:w-7/12 md:grid-cols-2'>
             {BENEFICIOS.map((beneficio, index) => (
               <div
-                className='p-4 flex flex-col gap-1 hover:bg-blue-600 active:bg-blue-600 hover:text-white hover:rounded-lg '
+                className='p-4 flex flex-col gap-1 hover:bg-blue-600 group active:bg-blue-600 hover:text-white hover:rounded-lg '
                 key={index}
               >
                 <div className='text-2xl md:text-3xl'>{beneficio.Icon}</div>
                 <h3 className='font-semibold text-xl'>{beneficio.title}</h3>
-                <p className='text-sm mt-2 text-lightBlack/80 hover:text-white'>
+                <p className='text-sm mt-2 text-lightBlack/80 group-hover:text-white'>
                   {beneficio.description}
                 </p>
               </div>
