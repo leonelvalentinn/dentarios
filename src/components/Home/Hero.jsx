@@ -8,11 +8,11 @@ export const Hero = () => {
       className='w-full max-w-7xl grid grid-cols-1 place-items-center gap-10 py-8 md:grid-cols-2 lg:gap-12 lg:py-0 lg:pb-10 lg:pt-12'
       id='inicio'
     >
-      <div className='absolute w-full max-w-[500px] h-[300px] rounded-full bg-gradient-to-br opacity-40 from-[#5454D4]/40 to-[#5454D4]/20 blur-3xl top-0 -left-60 rotate-[20deg] -z-[2] md:top-24 md:h-[400px] lg:from-primaryBlue/30 lg:to-[#7835FD]/30 lg:max-w-[1200px] lg:h-[300px]'></div>
+      <div className='absolute w-full max-w-[500px] h-[300px] rounded-full bg-gradient-to-br from-[#5454D4]/90 to-[#5454D4]/80 blur-3xl top-20 left-0 md:-left-60 md:rotate-[5deg] -z-[2] md:top-36 md:h-[400px] lg:from-primaryBlue/30 lg:to-[#7835FD]/30 lg:max-w-[1200px] lg:h-[300px]'></div>
       <article className='flex flex-col gap-6'>
-        <h1 className='uppercase text-blue-600 text-3xl font-semibold w-full leading-10 lg:text-4xl lg:leading-[3rem]'>
+        <h1 className='uppercase text-center text-blue-600 text-xl font-semibold w-full leading-6 lg:text-4xl md:text-start lg:leading-[3rem]'>
           Agencia de publicidad especializada en clínicas dentales <br />
-          <span className='text-black'>
+          <span className='text-white/80'>
             {' '}
             Atrae más pacientes y haz crecer tu negocio
           </span>
