@@ -1,8 +1,13 @@
 import { CardPackage } from './CardPackage'
-import Paquete1 from '../../assets/images/promos/paquete-google.webp'
-import Paquete2 from '../../assets/images/promos/paquete-premium.webp'
-import Paquete3 from '../../assets/images/promos/paquete-platino.webp'
-import Paquete4 from '../../assets/images/promos/paquete-diamante.webp'
+// import Paquete1 from '../../assets/images/promos/paquete-google.webp'
+// import Paquete2 from '../../assets/images/promos/paquete-premium.webp'
+// import Paquete3 from '../../assets/images/promos/paquete-platino.webp'
+// import Paquete4 from '../../assets/images/promos/paquete-diamante.webp'
+import Paquete1 from '../../assets/images/promos/banners-paquete-google.png'
+import Paquete2 from '../../assets/images/promos/banners-paquete-premium.png'
+import Paquete3 from '../../assets/images/promos/banners-paquete-platino.png'
+import Paquete4 from '../../assets/images/promos/banners-paquete-diamante.png'
+
 
 const PLANS = [
   {
