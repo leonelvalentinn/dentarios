@@ -3,42 +3,42 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Light.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 html {
-  font-family: 'Poppins', system-ui, sans-serif;
+  font-family: "Poppins", system-ui, sans-serif;
   color: #13151a;
   scroll-behavior: smooth;
 }
@@ -55,35 +55,46 @@ html {
 }
 
 .lite-youtube-fallback {
-	aspect-ratio: 16 / 9; /* matches YouTube player */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	gap: 1em;
-	padding: 1em;
-	background-color: #000;
-	color: #fff;
-	text-decoration: none;
+  aspect-ratio: 16 / 9; /* matches YouTube player */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* right-facing triangle "Play" icon */
 .lite-youtube-fallback::before {
-	display: block;
-	content: '';
-	border: solid transparent;
-	border-width: 2em 0 2em 3em;
-	border-left-color: red;
+  display: block;
+  content: "";
+  border: solid transparent;
+  border-width: 2em 0 2em 3em;
+  border-left-color: red;
 }
 
 .lite-youtube-fallback:hover::before {
-	border-left-color: #fff;
+  border-left-color: #fff;
 }
 
 .lite-youtube-fallback:focus {
-	outline: 2px solid red;
+  outline: 2px solid red;
 }
 
+.respuesta {
+  font-size: 13px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.efecto {
+  height: auto;
+  max-height: 300px;
+  transition: max-height 0.5s ease;
+}
 @media (min-width: 767px) {
   .imgCall {
     max-width: 100%;
